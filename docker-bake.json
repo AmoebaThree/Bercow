@@ -1,0 +1,18 @@
+{
+    "target": {
+        "default": {
+            "context": ".",
+            "dockerfile": "Dockerfile",
+            "tags": [
+                "docker.io/chrisjalexander/bercow:dev"
+            ],
+            "platforms": [
+                "linux/amd64",
+                "linux/arm/v6"
+            ],
+            "output": [
+                "type=registry"
+            ]
+        }
+    }
+}
