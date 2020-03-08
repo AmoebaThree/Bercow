@@ -1,5 +1,7 @@
 if __name__ == '__main__':
-    import systemd.daemon, os, redis
+    import systemd.daemon
+    import os
+    import redis
 
     print('ORDER')
     os.system("amixer set PCM unmute")
@@ -13,10 +15,10 @@ if __name__ == '__main__':
     try:
         for message in p.listen():
             cmd = message["data"]
-            filepath = "/home/pi/code/Bercow/Audio/" + cmd + ".WAV"
+            filepath = "/home/pi/zoidberg-deploy/bercow/Audio/" + cmd + ".WAV"
             if os.path.isfile(filepath):
                 os.system("aplay " + filepath + " &")
-            
+
     except:
         p.close()
         print("ORDER")

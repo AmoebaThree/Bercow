@@ -2,7 +2,7 @@
 Description=Bercow - the driver
 
 [Service]
-ExecStart=/usr/bin/python /home/pi/code/Bercow/bercow.py
+ExecStart=/usr/bin/python /home/pi/zoidberg-deploy/bercow/bercow.py
 Environment=PYTHONUNBUFFERED=1
 Restart=on-failure
 Type=notify

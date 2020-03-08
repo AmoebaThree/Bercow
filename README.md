@@ -17,7 +17,7 @@ Format: \<channel> "message"
 **Inputs**
 
 * \<bercow> "\<filename>"
-  * Play the file /home/pi/code/Bercow/Audio/\<filename>.WAV out of the headphone socket
+  * Play the file /home/pi/zoidberg-deploy/bercow/Audio/\<filename>.WAV out of the headphone socket
 
 **Outputs**
 
