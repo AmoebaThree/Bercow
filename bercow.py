@@ -14,8 +14,9 @@ def execute():
     p = r.pubsub(ignore_subscribe_messages=True)
     p.subscribe('bercow')
 
-    print('ORDER')
+    r.publish('services', 'bercow.on')
     systemd.daemon.notify('READY=1')
+    print('ORDER')
 
     try:
         for message in p.listen():
@@ -26,6 +27,7 @@ def execute():
 
     except:
         p.close()
+        r.publish('services', 'bercow.off')
         print('ORDER')
 
 
