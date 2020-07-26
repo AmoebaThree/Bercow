@@ -23,6 +23,7 @@ def execute():
             cmd = message['data']
             filepath = '/home/pi/zoidberg-deploy/bercow/Audio/' + cmd + '.WAV'
             if os.path.isfile(filepath):
+                r.publish('bercow.playing', cmd)
                 os.system('aplay ' + filepath + ' &')
 
     except:

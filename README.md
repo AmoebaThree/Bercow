@@ -13,4 +13,5 @@ Format: \<channel> "message"
 
 **Outputs**
 
-None
+* \<bercow.playing> "\<filename>"
+  * Reports beginning playing of file named /home/pi/zoidberg-deploy/bercow/Audio/\<filename>.WAV
