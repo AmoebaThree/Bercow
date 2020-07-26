@@ -6,12 +6,12 @@ The Speaker
 
 Format: \<channel> "message"
 
-**Inputs**
+### Inputs
 
 * \<bercow> "\<filename>"
   * Play the file /home/pi/zoidberg-deploy/bercow/Audio/\<filename>.WAV out of the headphone socket
 
-**Outputs**
+### Outputs
 
-* \<bercow.playing> "\<filename>"
+* \<bercow.speaker> "\<filename>"
   * Reports beginning playing of file named /home/pi/zoidberg-deploy/bercow/Audio/\<filename>.WAV
